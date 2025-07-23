@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5fff5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .booking-form {
+      background-color: #ffffff;
+      border: 1px solid #cce5cc;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 24px rgba(0, 128, 0, 0.1);
+      width: 400px;
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      color: #2f8f2f;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #2d5932;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #b8e6b8;
+      border-radius: 6px;
+      background-color: #f9fff9;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: #6fdc6f;
+      background-color: #ffffff;
+    }
+
+    .schedule-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .schedule-btn:hover {
+      background-color: #45a045;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="booking-form">
+    <h2>Book a Session</h2>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time" required>
+    </div>
+
+    <div class="form-group">
+      <label for="day">Day</label>
+      <select id="day" name="day" required>
+        <option value="" disabled selected>Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="consultant">Consultant</label>
+      <select id="consultant" name="consultant" required>
+        <option value="" disabled selected>Select Consultant</option>
+        <option>Dr. Sarah Khan</option>
+        <option>Mr. Omar Ali</option>
+        <option>Ms. Laila Rahman</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="continent">Continent</label>
+      <select id="continent" name="continent" required>
+        <option value="" disabled selected>Select Continent</option>
+        <option>Africa</option>
+        <option>Asia</option>
+        <option>Europe</option>
+        <option>North America</option>
+        <option>South America</option>
+        <option>Oceania</option>
+      </select>
+    </div>
+
+    <button type="submit" class="schedule-btn">Schedule Session</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contract Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0fff0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contract-form {
+      background-color: #ffffff;
+      border: 1px solid #cce5cc;
+      border-radius: 10px;
+      padding: 35px 40px;
+      width: 400px;
+      box-shadow: 0 8px 20px rgba(0, 128, 0, 0.1);
+    }
+
+    .contract-form h2 {
+      color: black
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: black
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #b6e7b6;
+      border-radius: 6px;
+      background-color: #f9fff9;
+      font-size: 14px;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #66cc66;
+      background-color: #ffffff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: hsl(145, 63%, 42%);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: hsl(145, 63%, 42%);
+    }
+  </style>
+</head>
+<body>
+
+  <form class="contract-form">
+    <h2>Get in Touch</h2>
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Inquiry</label>
+      <textarea id="message" name="message" placeholder="Please describe your inquiry to get a unique respons..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send</button>
+  </form>
+
+  <script>
+    function handleSubmit (event) {
+        event.preventDefault();
+        const from = event.target;
+
+        fetch(form.action, {
+            method: "POST", 
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        }
+        ) .then(Response => {
+            if (Response.ok) {
+                alert("Your message was sent succesfully.");
+                form.reset();
+            }
+            else {
+                alert("There was an error sending your message. Please try again. ");
+            }
+        
+        ) .catch(error => {
+            alert("Something went wrong. Please check your internet connection. ");
+        }
+        );
+
+        }
+
+    }
+  </script>
+
+</body>
+</html>
