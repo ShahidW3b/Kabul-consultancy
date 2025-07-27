@@ -24,7 +24,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Kabulx** locally, run this command on your git bash:
+To run **Kabul** locally, run this command on your git bash:
 
 Linux and macOS:
 
