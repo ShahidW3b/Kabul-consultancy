@@ -3,7 +3,7 @@
   ![GitHub repo size](#)
   ![GitHub stars](#)
   ![GitHub forks](#)
-[![Twitter Follow](#)
+![Twitter Follow](#)
   [![YouTube Video Views](#)](#)
 
   <br />
