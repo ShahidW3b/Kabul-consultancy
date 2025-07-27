@@ -1,19 +1,12 @@
 <div align="center">
   
-  ![GitHub repo size](#)
-  ![GitHub stars](#)
-  ![GitHub forks](#)
-![Twitter Follow](#)
-  [![YouTube Video Views](#)](#)
-
-  <br />
-  <br />
+ 
 
   <h2 align="center">Kabul - Digital Agency Website</h2>
 
   kabul is a fully responsive digital agency website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="#"><strong>➥ Live Demo</strong></a>
+  <a href="https://kabulconsultancy.netlify.app"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -45,10 +38,3 @@ Windows:
 git clone https://github.com/ShahidW3b/kabul.git
 ```
 
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/bibliophile).
-
-### License
-
-This project is **free to use** and does not contains any license.
